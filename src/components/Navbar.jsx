@@ -6,8 +6,8 @@ const Navbar = () => {
     <div className="navbar">
       <h1 className="logo">SOARESFLIX</h1>
       <div className="nav-buttons">
-        <button className="sign-in">Sign In</button>
-        <button className="sign-up">Sign Up</button>
+        <button className="sign-in">Entrar</button>
+        <button className="sign-up">Registrar</button>
       </div>
     </div>
   );
