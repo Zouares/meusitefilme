@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+  }
+  
+  .logo {
+    color: red;
+    font-size: 24px;
+  }
+  
+  .nav-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: darkred;
+  }
+  
+  .sign-up {
+    background-color: white;
+    color: black;
+  }
+  
+  .sign-up:hover {
+    background-color: grey;
+  }
+  

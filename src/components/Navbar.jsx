@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
+import './Navbar.css'; 
 
 const Navbar = () => {
   return (
-    <div className=''>
-        <h1 className='text-red-600 text-4x1 font-bold cursor-pointer'>NETFLIX</h1>
-        <div>
-            <button>Sign In</button>
-            <button>Sign Up</button>
-
-        </div>
+    <div className="navbar">
+      <h1 className="logo">SOARESFLIX</h1>
+      <div className="nav-buttons">
+        <button className="sign-in">Sign In</button>
+        <button className="sign-up">Sign Up</button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
