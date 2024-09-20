@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### `npm install react-scripts --save`
 
-Update React
+You can use ReactScript through a bundler like browserify or webpack
 
 ### `npm test`
 
