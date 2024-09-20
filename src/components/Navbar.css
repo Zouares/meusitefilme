@@ -8,6 +8,27 @@
   top: 0;
   width: 100%;
   z-index: 1000;
+  transition: background-color 0.5s ease;
+}
+
+.navbar-left {
+  display:flex;
+  align-items: center;
+}
+
+.navbar-left ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 10px;
+}
+
+.navbar-left li {
+  margin-left: 20px;
+  font-size:16px;
+  color: white;
+  cursor: pointer;
+    
 }
 
 .logo {

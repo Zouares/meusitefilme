@@ -1,0 +1,19 @@
+.series {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #141414;
+    color: white;
+    text-align: center;
+  }
+
+  .Series-Header {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .Series-Header h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
