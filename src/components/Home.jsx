@@ -7,16 +7,16 @@ const Home = () => {
   const { videoRef, saveCurrentTime, restoreCurrentTime } = useContext(VideoContext);
 
   useEffect(() => {
-    restoreCurrentTime(); // Restaura o tempo atual quando a página é carregada
+    restoreCurrentTime(); 
 
     return () => {
-      saveCurrentTime(); // Salva o tempo atual quando a página é desmontada
+      saveCurrentTime(); 
     };
   }, [restoreCurrentTime, saveCurrentTime]);
 
   return (
     <div className="home">
-      <video ref={videoRef} className="video-bg" autoPlay loop muted>
+      <video ref={videoRef} className="video-bg" autoPlay loop muted disablePictureInPicture>
         <source src={videoBg} type="video/mp4" />
         Seu navegador não suporta vídeos em HTML5.
       </video>

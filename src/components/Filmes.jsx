@@ -35,7 +35,7 @@ const Filmes = () => {
             <h2>SOARESFLIX ORIGINAL</h2>
             <h1>{selectedFilm.title}</h1>
             <p>{selectedFilm.description}</p>
-            <span>{selectedFilm.releaseDate} | 16+</span>
+            <span>{selectedFilm.releaseDate} | 18+</span>
           </div>
           <div className="preview-image">
             <video className="trailer" autoPlay loop muted>
