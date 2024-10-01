@@ -1,19 +1,92 @@
-.series {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #141414;
-    color: white;
-    text-align: center;
-  }
+/* Series.css */
 
-  .Series-Header {
-    max-width: 600px;
-    margin: 0 auto;
-  }
+.series-page {
+  padding-top: 100px; /* Para ficar abaixo da navbar */
+  color: white;
+  background-color: #141414;
+  padding-bottom: 50px;
+}
 
-  .Series-Header h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-  }
+.series-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.preview-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.preview-info h2 {
+  font-size: 18px;
+  color: red;
+}
+
+.preview-info h1 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.preview-info p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.preview-info span {
+  font-size: 14px;
+  color: gray;
+}
+
+.preview-image {
+  flex: 1;
+  position: relative;
+}
+
+.trailer {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.recommendadas,
+.populares {
+  margin-top: 30px; /* Espaço acima dos grupos de séries */
+}
+
+.recommendadas h1,
+.populares h1 {
+  margin-bottom: 10px;
+}
+
+.recommended-series,
+.popular-series {
+  display: flex;
+  overflow-x: auto; /* Permite a rolagem horizontal */
+  padding: 10px 0;
+}
+
+.serie-card {
+  min-width: 200px; /* Ajuste a largura mínima conforme necessário */
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.serie-card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.serie-card:hover img {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.no-selection {
+  text-align: center;
+  margin-top: 20px;
+}

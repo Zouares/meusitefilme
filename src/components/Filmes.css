@@ -1,19 +1,81 @@
-.filmes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #141414;
-    color: white;
-    text-align: center;
-  }
 
-  .Filmes-Header {
-    max-width: 600px;
-    margin: 0 auto;
-  }
+.filmes-page {
+  padding-top: 100px; 
+  color: white;
+  background-color: #141414;
+  padding-bottom: 50px;
+}
 
-  .Filmes-Header h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-  }
+.film-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.preview-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.preview-info h2 {
+  font-size: 18px;
+  color: red;
+}
+
+.preview-info h1 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.preview-info p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.preview-info span {
+  font-size: 14px;
+  color: gray;
+}
+
+.preview-image {
+  flex: 1;
+  position: relative;
+}
+
+.trailer {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.recommended-films,
+.popular-films {
+  display: flex;
+  overflow-x: auto; 
+  padding: 10px 0;
+}
+
+.film-card {
+  min-width: 200px; 
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.film-card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.film-card:hover img {
+  transform: scale(1.05); 
+}
+
+.no-selection {
+  text-align: center;
+  margin-top: 20px;
+}

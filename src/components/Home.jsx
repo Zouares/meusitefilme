@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import './Home.css';
+import videoBg from '../assets/StargazerVideo-002390_1.mp4';
+import { VideoContext } from '../VideoContext'; // Importando o VideoContext
 
 const Home = () => {
+  const { videoRef, saveCurrentTime, restoreCurrentTime } = useContext(VideoContext);
+
+  useEffect(() => {
+    restoreCurrentTime(); // Restaura o tempo atual quando a página é carregada
+
+    return () => {
+      saveCurrentTime(); // Salva o tempo atual quando a página é desmontada
+    };
+  }, [restoreCurrentTime, saveCurrentTime]);
+
   return (
     <div className="home">
+      <video ref={videoRef} className="video-bg" autoPlay loop muted>
+        <source src={videoBg} type="video/mp4" />
+        Seu navegador não suporta vídeos em HTML5.
+      </video>
       <header className="home-header">
         <h1>Bem-vindo ao SOARESFLIX</h1>
         <p>Assista aos melhores filmes e séries em um só lugar.</p>
