@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import './Home.css';
 import videoBg from '../assets/StargazerVideo-002390_1.mp4';
-import { VideoContext } from '../VideoContext'; // Importando o VideoContext
+import { VideoContext } from '../VideoContext'; 
 
 const Home = () => {
   const { videoRef, saveCurrentTime, restoreCurrentTime } = useContext(VideoContext);

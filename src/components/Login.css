@@ -1,4 +1,4 @@
-/* Estrutura da página de login */
+
 .login-container {
   position: relative;
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
   height: 100vh;
   overflow: hidden;
-   /* Caso o vídeo falhe ao carregar */
+   
 }
 
 .video-bg {
@@ -17,12 +17,12 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  filter: brightness(50%); /* Escurecer o vídeo para maior legibilidade do conteúdo */
+  filter: brightness(50%); 
 }
 
 .login-box {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.75); /* Fundo semitransparente */
+  background-color: rgba(0, 0, 0, 0.75); 
   padding: 40px;
   border-radius: 8px;
   max-width: 360px;

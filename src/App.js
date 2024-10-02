@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -6,7 +7,8 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Movies from './components/Filmes';
 import Series from './components/Series';
-import { VideoProvider } from './VideoContext'; // Importe o VideoProvider
+import UserProfile from './components/UserProfile'; 
+import { VideoProvider } from './VideoContext'; 
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/filmes" element={<Movies />} />
         <Route path="/series" element={<Series />} />
+        <Route path="/user-profile" element={<UserProfile />} /> {/* Adicione a nova rota */}
       </Routes>
     </VideoProvider>
   );

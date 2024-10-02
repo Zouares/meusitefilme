@@ -1,81 +1,91 @@
 
 .filmes-page {
-  padding-top: 100px; 
+  background-color: #000000;
   color: white;
-  background-color: #141414;
-  padding-bottom: 50px;
+  padding: 20px;
+  padding-top: 100px; 
 }
+
 
 .film-preview {
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #222;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
 }
 
-.preview-info {
-  flex: 1;
-  margin-right: 20px;
+.preview-overlay {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 40%, transparent);
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .preview-info h2 {
-  font-size: 18px;
   color: red;
+  font-size: 18px;
 }
 
 .preview-info h1 {
-  font-size: 28px;
-  margin: 10px 0;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .preview-info p {
-  font-size: 16px;
-  margin: 10px 0;
+  font-size: 18px;
+  max-width: 500px;
 }
 
 .preview-info span {
-  font-size: 14px;
-  color: gray;
+  font-size: 16px;
+  color: #888;
 }
 
-.preview-image {
-  flex: 1;
-  position: relative;
+
+.film-category {
+  margin: 30px 0;
 }
 
-.trailer {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.film-category h2 {
+  margin-left: 10px;
+  font-size: 24px;
 }
 
-.recommended-films,
-.popular-films {
+.film-row {
   display: flex;
-  overflow-x: auto; 
-  padding: 10px 0;
+  overflow-x: scroll;
+  padding: 10px;
 }
 
 .film-card {
-  min-width: 200px; 
   margin-right: 10px;
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 
 .film-card img {
-  width: 100%;
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
   border-radius: 10px;
-  transition: transform 0.3s ease;
 }
 
-.film-card:hover img {
-  transform: scale(1.05); 
+.film-card:hover {
+  transform: scale(1.05);
 }
 
-.no-selection {
-  text-align: center;
-  margin-top: 20px;
+
+.film-row::-webkit-scrollbar {
+  display: none;
 }
+
+.film-row {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+

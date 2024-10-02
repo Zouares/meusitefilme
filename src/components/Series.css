@@ -1,92 +1,94 @@
-/* Series.css */
 
 .series-page {
-  padding-top: 100px; /* Para ficar abaixo da navbar */
-  color: white;
-  background-color: #141414;
-  padding-bottom: 50px;
+  background-color: #000; 
+  color: white; 
+  padding: 20px;
+  padding-top: 100px; 
+  overflow-x: hidden; 
 }
 
+
 .series-preview {
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed; 
+}
+
+.series-overlay {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 40%, transparent);
   padding: 20px;
-  background-color: #222;
-  border-radius: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.series-info h2 {
+  color: red; 
+  font-size: 18px;
+}
+
+.series-info h1 {
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
-.preview-info {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.preview-info h2 {
+.series-info p {
   font-size: 18px;
-  color: red;
+  max-width: 500px;
 }
 
-.preview-info h1 {
-  font-size: 28px;
-  margin: 10px 0;
-}
-
-.preview-info p {
+.series-info span {
   font-size: 16px;
-  margin: 10px 0;
+  color: #888;
 }
 
-.preview-info span {
-  font-size: 14px;
-  color: gray;
+
+.series-category {
+  margin: 30px 0;
 }
 
-.preview-image {
-  flex: 1;
-  position: relative;
+.series-category h2 {
+  margin-left: 10px;
+  font-size: 24px;
 }
 
-.trailer {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.recommendadas,
-.populares {
-  margin-top: 30px; /* Espaço acima dos grupos de séries */
-}
-
-.recommendadas h1,
-.populares h1 {
-  margin-bottom: 10px;
-}
-
-.recommended-series,
-.popular-series {
+.series-row {
   display: flex;
-  overflow-x: auto; /* Permite a rolagem horizontal */
-  padding: 10px 0;
+  overflow-x: scroll; 
+  padding: 10px;
+  scroll-behavior: smooth; 
 }
 
-.serie-card {
-  min-width: 200px; /* Ajuste a largura mínima conforme necessário */
+.series-card {
   margin-right: 10px;
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 
-.serie-card img {
-  width: 100%;
+.series-card img {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
   border-radius: 10px;
-  transition: transform 0.3s ease;
 }
 
-.serie-card:hover img {
-  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+.series-card:hover {
+  transform: scale(1.05); 
 }
 
-.no-selection {
-  text-align: center;
-  margin-top: 20px;
+
+.series-row::-webkit-scrollbar {
+  display: none;
 }
+
+.series-row {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+

@@ -1,0 +1,83 @@
+
+
+.user-profile-container {
+    background-color: #141414; 
+    color: white; 
+    min-height: 100vh; 
+    padding: 80px 20px 20px; 
+    font-family: 'Arial', sans-serif; 
+    position: relative; 
+  }
+  
+  .user-profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #555;
+    padding-bottom: 20px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info h2 {
+    margin-right: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .logout-button {
+    background-color: #e50914; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; 
+  }
+  
+  .logout-button:hover {
+    background-color: #f40612; 
+    transform: scale(1.05); 
+  }
+  
+  .user-content {
+    margin-top: 20px;
+  }
+  
+  .user-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .user-movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 15px; 
+    margin-top: 20px;
+  }
+  
+  .movie-item {
+    background-color: #333; 
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s; 
+  }
+  
+  .movie-item:hover {
+    transform: scale(1.05); 
+  }
+  
+  .movie-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .movie-item p {
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: bold; 
+  }
+  

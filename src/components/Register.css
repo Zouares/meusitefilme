@@ -1,4 +1,4 @@
-/* Estrutura da página de registro */
+
 .register-container {
   position: relative;
   display: flex;
@@ -22,7 +22,7 @@
 
 .register-box {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.75); /* Fundo semitransparente */
+  background-color: rgba(0, 0, 0, 0.75); 
   padding: 40px;
   border-radius: 10px;
   color: white;
