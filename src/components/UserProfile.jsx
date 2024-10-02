@@ -1,15 +1,19 @@
-// UserProfile.jsx
 import React from 'react';
 import './UserProfile.css';
+ 
 
 const UserProfile = () => {
   const userEmail = localStorage.getItem('userEmail'); 
 
   return (
     <div className="user-profile-container">
-      <header className="user-profile-header">
-        <h1>Perfil do Usuário</h1>
+      <aside className="sidebar">
         <div className="user-info">
+          <img
+            src="https://via.placeholder.com/50" 
+            alt="User Avatar"
+            className="user-avatar"
+          />
           <h2>{userEmail}</h2>
           <button className="logout-button" onClick={() => {
             localStorage.removeItem('userEmail');
@@ -18,19 +22,44 @@ const UserProfile = () => {
             Sair
           </button>
         </div>
-      </header>
+        <nav className="sidebar-menu">
+          <ul>
+            <li>Manage profile</li>
+            <li>Membership & Billing</li>
+            <li>Plan Details</li>
+            <li>Settings</li>
+          </ul>
+        </nav>
+      </aside>
 
-      <div className="user-content">
-        <h3>Minhas Séries e Filmes</h3>
-        <div className="user-movies">
-          {/* Aqui você pode adicionar componentes para listar filmes/séries */}
-          <div className="movie-item">
-            <img src="https://via.placeholder.com/150" alt="Movie Poster" />
-            <p>Título do Filme/Série</p>
+      <main className="main-content">
+        <section className="watch-time-section">
+          <h3>Weekly Watch Time Breakdown</h3>
+          {/* Gráfico de horas assistidas */}
+          <div className="chart">
+            <p>22 hours 37 minutes</p>
+            {/* Aqui você pode adicionar um gráfico real */}
           </div>
-          {/* Adicione mais itens conforme necessário */}
-        </div>
-      </div>
+        </section>
+
+        <section className="user-movies-section">
+          <h3>Your Most Watched This Week</h3>
+          <div className="user-movies">
+            <div className="movie-item">
+              <img src="https://via.placeholder.com/150" alt="Movie Poster" />
+              <p>Título do Filme/Série 1</p>
+            </div>
+            <div className="movie-item">
+              <img src="https://via.placeholder.com/150" alt="Movie Poster" />
+              <p>Título do Filme/Série 2</p>
+            </div>
+            <div className="movie-item">
+              <img src="https://via.placeholder.com/150" alt="Movie Poster" />
+              <p>Título do Filme/Série 3</p>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   );
 };

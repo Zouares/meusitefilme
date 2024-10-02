@@ -18,6 +18,8 @@ const Filmes = () => {
     { title: 'Bridgerton', imageUrl: laCasaDePapelImg },
     { title: 'The Crown', imageUrl: laCasaDePapelImg },
     { title: 'Stranger Things', imageUrl: laCasaDePapelImg },
+    { title: 'Stranger Things', imageUrl: laCasaDePapelImg },
+    
   ];
 
   const handleFilmSelect = (film) => {
