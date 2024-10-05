@@ -1,17 +1,15 @@
-
 .series-page {
   background-color: #000; 
   color: white; 
-  padding: 20px;
-  padding-top: 100px; 
+  padding: 0px;
+  padding-top: 00px; 
   overflow-x: hidden; 
 }
-
 
 .series-preview {
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -20,7 +18,7 @@
   background-attachment: fixed; 
 }
 
-.series-overlay {
+.preview-overlay {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 40%, transparent);
   padding: 20px;
   width: 100%;
@@ -28,26 +26,25 @@
   bottom: 0;
 }
 
-.series-info h2 {
+.preview-info h2 {
   color: red; 
   font-size: 18px;
 }
 
-.series-info h1 {
+.preview-info h1 {
   font-size: 40px;
   margin-bottom: 20px;
 }
 
-.series-info p {
+.preview-info p {
   font-size: 18px;
   max-width: 500px;
 }
 
-.series-info span {
+.preview-info span {
   font-size: 16px;
   color: #888;
 }
-
 
 .series-category {
   margin: 30px 0;
@@ -58,21 +55,25 @@
   font-size: 24px;
 }
 
+.series-row-wrapper {
+  position: relative;
+}
+
 .series-row {
   display: flex;
-  overflow-x: scroll; 
-  padding: 10px;
-  scroll-behavior: smooth; 
+  transition: all 0.3s ease;
+  width: max-content; 
 }
 
 .series-card {
+  min-width: 300px;
   margin-right: 10px;
-  transition: transform 0.3s ease;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .series-card img {
-  width: 300px;
+  width: 100%;
   height: 450px;
   object-fit: cover;
   border-radius: 10px;
@@ -82,13 +83,37 @@
   transform: scale(1.05); 
 }
 
-
-.series-row::-webkit-scrollbar {
-  display: none;
+.series-row-arrow {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%); 
+  width: 50px; 
+  height: 50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7); 
+  color: white;
+  border-radius: 50%; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s, background 0.3s; 
 }
 
-.series-row {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+.series-row-arrow:hover {
+  background: rgba(0, 0, 0, 0.9); 
+  transform: translateY(-50%) translateX(5px) rotate(5deg); 
 }
 
+.series-row-arrow.right {
+  right: 20px; 
+}
+
+.series-row-arrow.left {
+  left: 20px; 
+}
+
+.series-row-arrow.left:hover {
+  transform: translateY(-50%) translateX(-5px) rotate(-5deg); 
+}

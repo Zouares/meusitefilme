@@ -17,7 +17,9 @@
         </Link>
         <div className="navbar-left">
           <ul>
+            <Link to="/">
             <li>Início</li>
+            </Link>
             <Link to="/filmes">
               <li>Filmes</li>
             </Link>
