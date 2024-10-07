@@ -18,6 +18,10 @@ You may also see any lint errors in the console.
 
 You can use ReactScript through a bundler like browserify or webpack
 
+### `npm install firebase`
+
+Install firebase dependences
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
